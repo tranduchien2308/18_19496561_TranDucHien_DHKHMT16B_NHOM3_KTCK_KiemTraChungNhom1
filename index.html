@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18_19496561_TranDucHien_DHKTPM15B</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cmnd.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <!--header-->
+        <div class="row" id="header">
+            <div class="col-md-2" style="background-color: #a8d1d9;">
+                <img src="img/LOGO.PNG" alt="logo">
+            </div>
+            <div class="col-md-10 text-center" style="background-color: #a8d1d9; border-top:2px solid #4c527d; padding-top: 15px;">
+                <h3 style="color:#344f90; font-weight: bold;"> BỘ CÔNG THƯƠNG</h3>
+                <h3 style="color:#344f90; font-weight: bold;"> TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP THÀNH PHỐ HỒ CHÍ MINH</h3>
+                <h5 class="text-danger">Đổi mới, nâng tầm cao mới - Năng động hội nhập toàn cầu</h5>
+            </div>
+        </div>
+        <!--Menu-->
+        <div class="row navbar navbar-expand-lg navbar-light ">
+            <button type="button" class="navbar-toggler" data-toggle="TOUR" data-target="#myMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" style="color:blue">Đăng nhặp</a></li>
+                    <li class="nav-item" id="dangki"><a class="nav-link" style="color:blue">Đăng kí</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <!--Main-->
+        <div class="row border">
+            <div class="col-12">
+                <h1 style="text-align: center;  text-transform: uppercase; ">Danh sách đăng kí làm căn cước sinh viên </br>trường DHCN thành phố HCM</h1>
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ tên</th>
+                            <th>SCMND cũ</th>
+                            <th>Quê Quán</th>
+                            <th>Email</th>
+                            <th>Điện thoại</th>
+                            <th>Ảnh đại diện</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="row bf-light border" id="footer">
+            <div class="col-12 my-auto">
+                <p class=" text-center pt-2 font-italic">SVTH:Trần Đức Hiền MSSV:19496561 Lớp:DHKHMT16B_Nhóm TH 3</p>
+            </div>
+
+        </div>
+    </div>
+    <!--Modal-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100">THÔNG TIN CÁ NHÂN</h4>
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <from action="" id="frm1">
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="txthoten">Họ tên</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="txthoten" class="form-control" placeholder="Nhập họ tên">
+                                <span id="tbhoten" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="txtcmnd">SCMND cũ</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="txtcmnd" class="form-control" placeholder="Nhập SCMND cũ">
+                                <span id="tbcmnd" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="txtquequan">Quê quán</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="txtquequan" class="form-control" placeholder="Nhập tỉnh của bạn">
+                                <span id="tbquequan" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="txtemail">Email</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="txtemail" class="form-control" placeholder="Nhập email của bạn">
+                                <span id="tbemail" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="txtsdt">Số điện thoại</label>
+                            <div class="col-lg-8">
+                                <input type="text" id="txtsdt" class="form-control" placeholder="0xx-xxx-xxxx">
+                                <span id="tbsdt" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group form-row">
+                            <label class="col-lg-4" for="txthinhanh">Ảnh đại diện</label>
+                            <div class="col-lg-8">
+                                <input type="file" id="txthinhanh" class="form-control">
+                                <span id="tbhinhanh" class="text-danger font-italic">*</span>
+                            </div>
+                        </div>
+                        <button id="btnluu" type="button" class="btn btn-success btn-block">Lưu</button>
+                    </from>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
